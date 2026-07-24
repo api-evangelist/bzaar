@@ -1,0 +1,42 @@
+generated: '2026-07-20'
+method: probed
+source: live HTTP probes of https://bzaar.com
+host: https://bzaar.com
+soft_404: true
+soft_404_note: >-
+  The host answers every path — including paths that cannot exist — with an
+  identical 114-byte GoDaddy parking-lander document (md5
+  e89f75f918dbdcee28604d4e09dd71d7). HTTP 200 on a /.well-known/ path is
+  therefore NOT evidence that the document exists. Every probe below was
+  verified against a control path (/this-path-does-not-exist-xyz) and returned
+  byte-identical content, so all are recorded as absent.
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  exists: false
+  reason: soft-404 parking lander
+- path: /.well-known/openid-configuration
+  status: 200
+  exists: false
+  reason: soft-404 parking lander
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  exists: false
+  reason: soft-404 parking lander
+- path: /.well-known/api-catalog
+  status: 200
+  exists: false
+  reason: soft-404 parking lander
+- path: /.well-known/ai-plugin.json
+  status: 200
+  exists: false
+  reason: soft-404 parking lander
+- path: /llms.txt
+  status: 200
+  exists: false
+  reason: soft-404 parking lander
+- path: /openapi.json
+  status: 200
+  exists: false
+  reason: soft-404 parking lander
+found: 0

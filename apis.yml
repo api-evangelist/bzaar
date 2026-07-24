@@ -1,7 +1,31 @@
 aid: bzaar
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bzaar.png
 name: Bzaar
-description: Bzaar is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Bzaar is a cross-border business-to-business wholesale marketplace founded
+  in 2020-2021 by Nishant Verman (previously head of corporate development at Flipkart)
+  and Prasanth Nair (previously engineering and product at Amazon, Flipkart, and Lazada),
+  headquartered in Palo Alto / San Francisco, California with operations in India.
+  The platform connected small and medium retailers in the United States and other
+  markets with curated suppliers and manufacturers in India and Southeast Asia, listing
+  thousands of products across home, lifestyle, accessories, apparel, jewelry, cookware,
+  and bakeware verticals, and layering sourcing services such as vendor management,
+  quality control, consolidated logistics, and cross-border payments on top of the
+  catalog. Bzaar raised a $4 million seed round led by Canaan Partners with participation
+  from Binny Bansal, Sameer Nigam, Rahul Chari, Lee Fixel, and Ashish Gupta. As of
+  this enrichment pass Bzaar publishes no public developer portal, API documentation,
+  or machine-readable API surface, and its bzaar.com domain resolves to a registrar
+  parking page rather than a live product site.'
 url: https://raw.githubusercontent.com/api-evangelist/bzaar/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +33,47 @@ x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-web-presence: parked
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- B2B
+- Marketplace
+- Wholesale
+- E-Commerce
+- Retail
+- Cross-Border Trade
+- Sourcing
+- Supply Chain
+- India
+- Southeast Asia
 apis: []
+common:
+- type: Website
+  url: https://bzaar.com/
+- type: CompanyProfile
+  name: Crunchbase
+  url: https://www.crunchbase.com/organization/bzaar
+- type: LinkedIn
+  url: https://www.linkedin.com/company/bzaarwholesale
+- type: DomainSecurity
+  url: security/bzaar-domain-security.yml
+x-well-known-probe: well-known/bzaar-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+  notes: >-
+    No public API, developer portal, docs host, GitHub organization, SDK
+    packages, or /.well-known/ surface found. bzaar.com serves a GoDaddy
+    parking lander on every path (verified soft-404) while still running
+    Google Workspace mail with SPF and a p=quarantine DMARC policy, so the
+    domain is owned but the web product is not live. No artifact pointers
+    were emitted beyond the probed DomainSecurity record; a WellKnown pointer
+    was deliberately withheld because zero documents actually exist.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

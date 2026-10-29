@@ -64,21 +64,79 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Bzaar is a cross-border business-to-business wholesale marketplace founded in 2020-2021 by Nishant Verman (previously head of corporate development at Flipkart) and Prasanth Nair (previously engineering and product at Amazon, Flipkart, and Lazada), headquartered in Palo Alto / San Francisco, California with operations in India. The platform connected small and medium retailers in the United States and other markets with curated suppliers and manufacturers in India and Southeast Asia across home, lifestyle, accessories, apparel, jewelry, cookware, and bakeware verticals, layering vendor management, quality control, consolidated logistics, and cross-border payments on top of the catalog.
+Bzaar is a cross-border business-to-business wholesale marketplace founded in 2020-2021 by Nishant Verman (previously head of corporate development at Flipkart) and Prasanth Nair (previously engineering and product at Amazon, Flipkart, and Lazada), headquartered in Palo Alto / San Francisco, California with operations in India. The platform connected small and medium retailers in the United States and other markets with curated suppliers and manufacturers in India and Southeast Asia, listing thousands of products across home, lifestyle, accessories, apparel, jewelry, cookware, and bakeware verticals, and layering sourcing services such as vendor management, quality control, consolidated logistics, and cross-border payments on top of the catalog. Bzaar raised a $4 million seed round led by Canaan Partners with participation from Binny Bansal, Sameer Nigam, Rahul Chari, Lee Fixel, and Ashish Gupta. As of this enrichment pass Bzaar publishes no public developer portal, API documentation, or machine-readable API surface, and its bzaar.com domain resolves to a registrar parking page rather than a live product site.
 
-Bzaar raised a $4 million seed round led by Canaan Partners, with participation from Binny Bansal, Sameer Nigam, Rahul Chari, Lee Fixel, and Ashish Gupta.
+**Areas:** Company · B2B · Marketplace · Wholesale · E-Commerce · Retail · Cross-Border Trade · Sourcing · Supply Chain · India · Southeast Asia
 
-Backed by: canaan-partners
+## Bzaar on APIs.io
 
-## API surface
+Everything profiled for Bzaar is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bzaar/](https://apis.io/providers/bzaar/)** — or go straight to one of the APIs or properties below.
 
-As of the 2026-07-20 enrichment pass, Bzaar publishes **no public API surface**: no developer portal, API documentation, API reference, OpenAPI/AsyncAPI specification, SDK packages on any public registry, GitHub organization, or `/.well-known/` discovery documents.
+### Published properties
 
-`bzaar.com` returns an identical GoDaddy parking-lander document on every path (a verified soft-404), so the web product is not live — though the domain remains actively owned, running Google Workspace mail with SPF and a `p=quarantine` DMARC policy.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Artifacts
+#### Security (1)
 
-| Artifact | File | Method |
-|---|---|---|
-| Domain security | `security/bzaar-domain-security.yml` | probed |
-| Well-known probe (0 documents) | `well-known/bzaar-well-known.yml` | probed |
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bzaar Domain Security](https://apis.io/security/bzaar/bzaar-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://bzaar.com/)
+
+## API Evangelist rating
+
+**Kin Score 3.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bzaar/](https://apis.io/providers/bzaar/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bzaar: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bzaar/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
